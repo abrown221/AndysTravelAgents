@@ -37,26 +37,32 @@ const BDAYS=[
     {time:"9:00 AM",name:"ð¯ Honey Tasting (replaces Beekeeping)",ppl:[1,1,1,1,1],cancel:"TBD",note:"â ï¸ OPTIONAL Â· NOT BOOKED â Decide on arrival. Beekeeping is 8+ only, so Rose can't participate. Honey Tasting instead: tour of pollinators on-site, observe bees safely, beeswax demo, taste two honeys. Optional 4Ã4 Jeep ride to hives. Carolina waiting for go-ahead."},
     {time:"11:30 AM",name:"ðª Cookie Workshop",ppl:[0,0,1,1,1],cancel:"12h",note:"â BOOKED â Rose, Christina, Jim. While Andy + Nicole are at wine tasting."},
     {time:"12:00 PM",name:"ð· Fita Preta Wines",ppl:[1,1,0,0,0],cancel:"24h",note:"â BOOKED â 12:00 PM Private Wine Tasting with food pairing (6 heroic wines). Andy + Nicole."},
-    {time:"~3:00 PM",name:"ðï¸ Ãvora guided tour",ppl:[1,1,0,0,0],cancel:"â",note:"â³ PENDING â Carolina checking guide availability. UNESCO World Heritage city: Roman Temple, bone chapel, cathedral. 1.5â2 hour guided walking tour. Could combine with Fita Preta visit... Unique chance to see this historic city while in the region.",flag:"Carolina checking guide availability",price:"Guide TBD"},
+    {time:"~3:00 PM",name:"ðï¸ Ãvora guided tour",ppl:[1,1,0,0,0],cancel:"â",note:"â³ PENDING â Carolina checking guide availability. UNESCO World Heritage city: Roman Temple, bone chapel, cathedral. 1.5â2 hour guided walking tour. Could combine with Fita Preta visit."},
   ]},
-  {day:"Mon, Mar 30",label:"Day 3 â Clay, Shelter & Farewell",sub:"â ï¸ Little Lisbon balance â¬280 due today via PayPal",items:[
-    {time:"11:30 AM",name:"ð¨ Playing with Clay",ppl:[0,0,1,1,1],cancel:"12h",note:"Rose, Christina, Jim. Rose molds and shapes her own keepsakes to take home. Last grandparent craft activity."},
-    {time:"2:00 PM",name:"ð Spa â Herbal Compress",ppl:[0,1,0,0,0],cancel:"same-day",note:"â CAROLINA CONFIRMED â Nicole solo."},
-    {time:"3:30 PM",name:"ð¦ Animal Shelter Building",ppl:[1,1,1,0,0],cancel:"4h",note:"â BOOKED â Moved from Apr 1 (only date colleague is on property). Andy, Nicole, Rose build birdhouses for 75 bird species. Rose leaves something behind at Barrocal.",flag:"Moved from Apr 1 â colleague only available Mar 30"},
-    {time:"~7:00 PM",name:"ð½ï¸ Cottage Farewell Dinner",ppl:[1,1,1,1,1],cancel:"24h",note:"â CAROLINA CONFIRMED â Private catered in your cottage: candles, flowers, estateâs best. Grandparentsâ farewell night. Mar 30."},
-    {time:"~9:00 PM",name:"ð Nocturnal Walk",ppl:[1,1,0,1,1],cancel:"12h",note:"â CONFIRMED â All 4 adults. Estate biologist, flashlights, nocturnal fauna. Zero light pollution. Rose sleeps after dinner."},
+  {day:"Mon, Mar 30",label:"Day 3 â Clay, Spa, Shelter & Farewell",sub:"ð Grandparents' last full day",items:[
+    {time:"11:30 AM",name:"ð¨ Clay Modeling Workshop",ppl:[0,0,1,1,1],cancel:"12h",note:"â CAROLINA CONFIRMED â Rose, Christina, Jim. Pieces made today, painted on Mar 31 during wine blending. Grandparents' last craft activity."},
+    {time:"2:00 PM",name:"ð Spa â Herbal Compress Treatment",ppl:[0,1,0,0,0],cancel:"same-day",note:"â CAROLINA CONFIRMED â Nicole solo session. Carolina suggests Herbal Compress. Full spa menu PDF attached."},
+    {time:"3:30 PM",name:"ð¦ Animal Shelter Building",ppl:[1,1,1,0,0],cancel:"4h",note:"â CAROLINA CONFIRMED â â ï¸ MOVED FROM APR 1. The colleague running this experience is ONLY on property Mar 30. This is the only option. Andy, Nicole, Rose build birdhouses."},
+    {time:"7:30 PM",name:"ð½ï¸ Cottage Dine-In Experience",ppl:[1,1,1,1,1],cancel:"TBD",note:"â CAROLINA CONFIRMED â Private farewell dinner in the cottage. Carolina says this is the best option and will meet expectations. Dine-in menu PDF attached for review. Grandparents' farewell night."},
+    {time:"~9:00 PM",name:"ð Nocturnal Walk",ppl:[1,1,1,1,1],cancel:"12h",note:"â CONFIRMED â All 4 adults (Rose sleeps after dinner). Estate biologist, flashlights, nocturnal fauna. Zero light pollution."},
   ]},
-  {day:"Tue, Mar 31",label:"Day 4 â Horses, Wine Blending & The Split",sub:"Grandparents depart for Cascais",items:[
-    {time:"~8:30 AM",name:"ð Grandparents Shuttle â Cascais",ppl:[0,0,0,1,1],cancel:"24h",note:"â CAROLINA CONFIRMED â Mercedes Class Limo for 2 + luggage. ~2.5 hours to Cascais. Reunite Apr 2 in Lisbon."},
-    {time:"~11:00 AM",name:"ð´ Discovering Horses",ppl:[1,1,1,0,0],cancel:"4h",note:"â BOOKED â Lusitano horses â grooming, feeding, learning about their care. Designed for kids. Rose gets quality time with horses without the grandparent farewell emotion."},
-    {time:"~5:00 PM",name:"ð· Wine Blending",ppl:[1,1,0,0,0],cancel:"12h",note:"Create your own wine. Labeled bottle to take home."},
+  {day:"Tue, Mar 31",label:"Day 4 â The Split",sub:"â ï¸ Grandparents depart AM",items:[
+    {time:"8:30 AM",name:"ð Shuttle: Barrocal â Albatroz (Cascais)",ppl:[0,0,0,1,1],cancel:"24h",note:"â CAROLINA CONFIRMED â Mercedes Class Limo for 2 + luggage. ~2.5 hours to The Albatroz."},
+    {time:"11:00 AM",name:"ð´ Discovering Horses",ppl:[1,1,1,0,0],cancel:"4h",note:"â CAROLINA CONFIRMED â Andy, Nicole, Rose. Lusitano horses â grooming, feeding, bonding. Family of 3 version after grandparents leave."},
+    {time:"5:00 PM",name:"ð· Wine Blending Workshop",ppl:[1,1,0,0,0],cancel:"12h",note:"â CAROLINA CONFIRMED â Andy + Nicole. Blend grapes, labeled bottle to take home."},
+    {time:"5:00 PM",name:"ð¨ Clay Painting (Rose)",ppl:[0,0,1,0,0],cancel:"â",note:"â CAROLINA CONFIRMED â Instead of playroom, Rose paints her clay pieces from the Mar 30 workshop with a Guest Experience team member. Much better than playroom!"},
   ]},
-  {day:"Wed, Apr 1",label:"Day 5 â Sintra & Farewell Alentejo",items:[
-    {time:"9:30 AM",name:"ð° Monsaraz village",ppl:[1,1,1,0,0],cancel:"â",note:"Medieval walled village, 4 km. Castle, Witchesâ Tower (fairy tale for Rose), oldest bullring in Portugal."},
-    {time:"1:00 PM",name:"ð¸ Flower Arranging",ppl:[0,1,1,0,0],cancel:"24h",note:"â CONFIRMED â 1:00 PM. Nicole + Rose forage wildflowers with florist. Late March = peak bloom."},
-    {time:"3:00 PM",name:"ð¯ï¸ Candle Making",ppl:[1,1,1,0,0],cancel:"12h",note:"Beeswax + aromatic herbs from the estate. Wonderful keepsakes."},
-    {time:"9:40 AMâ5:00 PM",name:"ð° Sintra Palaces",ppl:[0,0,0,1,1],cancel:"24h",price:"Guide + fuel incl.",note:"FULLY CONFIRMED through Albatroz/JosÃ©. Pena Palace â Quinta da Regaleira â Azenhas do Mar â Cabo da Roca â coastal road back. Full day."},
-    {time:"~8:00 PM",name:"ð½ï¸ Dinner in Cascais",ppl:[0,0,0,1,1],cancel:"â",note:"JosÃ© recommended Monte Mar or MarÃ© â both on road to Guincho, sea views, ~10 min from Albatroz. Tell JosÃ© our pick."},
+  {day:"Wed, Apr 1",label:"Day 5 â Farewell Alentejo",items:[
+    {time:"1:00 PM",name:"ð¸ Flower Arranging",ppl:[0,1,1,0,0],cancel:"24h",note:"â CONFIRMED â 1:00 PM. Nicole + Rose forage wildflowers with a florist on the estate. Late March = peak bloom."},
+    {time:"3:00 PM",name:"ð¯ï¸ Beeswax Candle Making",ppl:[1,1,1,0,0],cancel:"12h",note:"â CAROLINA CONFIRMED â Andy, Nicole, Rose. Beeswax + aromatic herbs from the estate."},
+  ]},
+  {day:"Thu, Apr 2",label:"Day 6 â Departure to Lisbon",items:[
+    {time:"8:00 AM",name:"ð Shuttle: Barrocal â Bairro Alto Hotel",ppl:[1,1,1,0,0],cancel:"24h",note:"â CAROLINA CONFIRMED â Mercedes E Class. Andy, Nicole, Rose + luggage + car seat."},
+  ]},
+  {day:"ð Still Pending",label:"Open Items",items:[
+    {time:"1",name:"ð Ãvora guide",ppl:[0,0,0,0,0],cancel:"â",note:"Carolina checking availability for guided walking tour of Ãvora (Sun Mar 29, after Fita Preta)."},
+    {time:"2",name:"ð¯ Honey tasting",ppl:[0,0,0,0,0],cancel:"â",note:"OPTIONAL â Confirm on arrival if we want to do this (Sun Mar 29 morning)."},
+    {time:"3",name:"ð½ï¸ Wed dinner choice",ppl:[0,0,0,0,0],cancel:"â",note:"Monte Mar or MarÃ© â both on road to Guincho, sea views, ~10 min from Albatroz. Tell JosÃ© our pick."},
   ]},
 ];
 
@@ -106,7 +112,7 @@ const CAL=[
     {t:"~11:30",n:"ðª Cookie workshop",p:[0,0,1,1,1],from:"B",src:1,booked:true,par:true,d:"â BOOKED â Rose bakes with Christina + Jim while Andy+Nicole are at the winery. Rolling pins, cookie cutters, decorating.",cancel:"12h",links:[{t:"Barrocal",u:"https://barrocal.pt/experiences/"}]},
     {t:"~3:00",n:"ðï¸ Ãvora guided tour",p:[1,1,0,0,0],from:"B",src:1,d:"â³ PENDING â Carolina checking guide availability. UNESCO World Heritage city: Roman Temple, bone chapel, cathedral. 1.5â2 hour guided walking tour. Could combine with Fita Preta winery visit. If no guide available, self-guided with Carolina's recommendations.",mapQ:"Ãvora+Portugal",links:[{t:"Ãvora",u:"https://maps.google.com/?q=Ãvora+Portugal"}]},
     {t:"~5:00",n:"Reunite & pool",p:[1,1,1,1,1],d:"Hotel bar in the old olive oil mill. Estate wines + cocktails."},
-    {t:"7:00 PM",n:"Early dinner",p:[1,1,1,1,1],d:"Rose to bed after. Easy evening â"nocturnal walk moved to Mon."},
+    {t:"7:00 PM",n:"Early dinner",p:[1,1,1,1,1],d:"Rose to bed after. Easy evening â nocturnal walk moved to Mon."},
   ]},
   {date:"Mon, Mar 30",n:3,title:"Clay, Shelter & Farewell",iso:"2026-03-30",hotel:"bar",free:5,note:"ð Grandparents' last day at Barrocal",prep:"Warm layers for nocturnal walk tonight. Sun hats, sunscreen.",locs:[{w:[1,1,1,1,1],l:"bar"}],acts:[
     {t:"~9:00",n:"Breakfast",p:[1,1,1,1,1],d:"Big leisurely breakfast. No rush â morning activities are relaxed."},
@@ -144,17 +150,17 @@ const CAL=[
     {t:"7:00 PM",n:"Farewell dinner",p:[1,1,1,0,0],loc:"bar",d:"Last Alentejo evening. Final estate wine. View of Monsaraz lit by last light."},
   ]},
   {date:"Thu, Apr 2",n:6,title:"Reunite in Lisbon!",iso:"2026-04-02",hotel:"lis",free:7.5,prep:"Download Google Maps offline: Lisbon + Cascais regions before leaving Barrocal Wi-Fi.",locs:[{w:[1,1,1,1,1],l:"lis"}],acts:[
-    {t:"8:30 AM",n:"âµ Yacht cruise â Katerina Cranch",p:[0,0,0,1,1],from:"A",src:1,booked:true,d:"â CONFIRMED â Katerina Cranch, 12m yacht. 2-hour coastal cruise from Cascais Marina. Captain, fuel, paddle boards, welcome drinks included. 8:30 AM departure.\n\nLogistics: Check out of Albatroz. Leave luggage with concierge. Walk to marina (~10 min). After cruise: private car transfer to Bairro Alto Hotel (luggage pre-loaded from hotel â no backtracking needed).",cancel:"24h",mapQ:"Cascais+Marina+Portugal",links:[{t:"Cascais sailing",u:"https://www.viator.com/Cascais/d28587-ttd"}]},
+    {t:"8:30 AM",n:"âµ Yacht cruise â Katerina Cranch",p:[0,0,0,1,1],from:"A",src:1,booked:true,d:"â CONFIRMED â Katerina Cranch, 12m yacht. 2-hour coastal cruise from Cascais Marina. Captain, fuel, paddle boards, welcome drinks included. 8:30 AM departure.\n\nLogistics: Check out of Albatroz. Leave luggage with concierge. Walk to marina (~10 min). After cruise: private car transfer to Bairro Alto Hotel (luggage pre-loaded from hotel â no backtracking needed).",cancel:"24h",mapQ:"Cascais+Marina+Portugal",links:[{t:"Cascais sailing",u:"https://www.viator.com/Cascais/d28587-ttd"}]},
     {t:"~10:30 AM",n:"ð Private car â Lisbon",p:[0,0,0,1,1],from:"A",src:1,booked:true,d:"â CONFIRMED â Private car from Cascais Marina to Bairro Alto Hotel. Luggage pre-loaded from hotel â no backtracking needed. After 2-hour yacht cruise.",mapQ:"Bairro+Alto+Hotel+Lisbon"},
     {t:"8:00 AM",n:"ð Barrocal â Lisbon",p:[1,1,1,0,0],from:"A",src:1,booked:true,d:"â CAROLINA CONFIRMED â Mercedes E Class. Car seat for Rose. Barrocal shuttle, ~2 hours. Rose naps.",cancel:"24h",links:[{t:"Barrocal",u:"https://barrocal.pt"}]},
-    {t:"1:00 PM",n:"ð´ Lunch & nap",p:[1,1,1,0,0],par:true,d:"Back to hotel. Rose needs rest before Alfama. Critical recharge."},
+    {t:"1:00 PM",n:"ð´ Lunch & nap",p:[1,1,1,0,0],par:true,d:"Back to hotel. Rose needs rest before Alfama. Critical recharge."},
     {t:"1:00 PM",n:"ðï¸ Chiado free time",p:[0,0,0,1,1],par:true,d:"Christina + Jim explore: Bertrand (world's oldest bookshop, 1732), Carmo Convent (roofless 1755 church â architecturally haunting), Manteigaria pastÃ©is de nata. All 5-min walk from hotel.",mapQ:"Carmo+Convent+Lisbon",links:[{t:"Carmo Convent",u:"https://maps.google.com/?q=Carmo+Convent+Lisbon"}]},
     {t:"3:00 PM",n:"ð¶ Little Lisbon â Express Lisbon Tour",p:[1,1,1,1,1],from:"A",src:1,booked:true,d:"â FULLY CONFIRMED by Mariana â Thu Apr 2, 3:00 PM.\n'Express Lisbon' private family tour: 2-hour tuk-tuk ride + 1-hour walking tour with scavenger hunt.\nGuide + driver meet at Bairro Alto Hotel.\n\nRoute: Baixa â Chiado â Bairro Alto â PrÃ­ncipe Real â Mouraria â Alfama. Viewpoints: Senhora do Monte, Portas do Sol/Santa Luzia, SÃ£o Pedro de AlcÃ¢ntara. Kids' games + pastry included.\n\nScavenger hunt options (choose at start): Alfama (ends Campo das Cebolas) OR Bairro Alto (ends PraÃ§a D. LuÃ­s I).\n\nBalance payment due by Mon Mar 30 via PayPal.\n\nð +351 912 800 647 Â· info@lisbonforkids.com (Mariana)",phone:"+351912800647",cancel:"24h",mapQ:"Alfama+Lisbon",links:[{t:"Little Lisbon",u:"https://www.lisbonforkids.com/tuk-tuk-tours"}]},
     {t:"~4:30",n:"ð° Alfama + Castle",p:[1,1,1,1,1],d:"Tile streets, peacocks, ramparts, Children's Centre. Ginjinha for adults.",mapQ:"Castelo+SÃ£o+Jorge+Lisbon",links:[{t:"Castelo",u:"https://maps.google.com/?q=Castelo+SÃ£o+Jorge+Lisbon"}]},
     {t:"7:00 PM",n:"ð½ï¸ Early dinner",p:[1,1,1,0,0],par:true,d:"Family eats early. Rose to bed. Quiet evening."},
     {t:"8:30 PM",n:"ðµ Fado â Mesa de Frades",p:[0,0,0,1,1],from:"A",src:1,par:true,d:"Tiny former chapel. Good Friday fado = once-in-a-lifetime. Book via concierge. Very small â book early.",mapQ:"Mesa+de+Frades+Alfama+Lisbon",links:[{t:"Mesa de Frades",u:"https://maps.google.com/?q=Mesa+de+Frades+Alfama+Lisbon"}]},
   ]},
-  {date:"Fri, Apr 3",n:7,title:"Oceanarium, Alfama & Fado",iso:"2026-04-03",hotel:"lis",free:6,note:"â ï¸ Good Friday â"national holiday",prep:"Charge phone fully â heavy photo day. Metro passes for all. Comfortable shoes for Alfama cobblestones.",locs:[{w:[1,1,1,1,1],l:"lis"}],acts:[
+  {date:"Fri, Apr 3",n:7,title:"Oceanarium, Alfama & Fado",iso:"2026-04-03",hotel:"lis",free:6,note:"â ï¸ Good Friday â national holiday",prep:"Charge phone fully â heavy photo day. Metro passes for all. Comfortable shoes for Alfama cobblestones.",locs:[{w:[1,1,1,1,1],l:"lis"}],acts:[
     {t:"10:00 AM",n:"ð Oceanarium",p:[1,1,1,1,1],from:"A",src:1,booked:true,d:"â BOOKED â Ref #96455533. 10:00 AM entry, Fri Apr 3.\n\nTHE must-do for Rose. 15,000+ marine animals. Metro to Oriente (Calatrava station). Allow 2+ hours.\n\nð +351 218 917 000 Â· info@oceanario.pt",phone:"+351218917000",cancel:"24h",mapQ:"OceanÃ¡rio+de+Lisboa",links:[{t:"Oceanarium",u:"https://www.oceanario.pt"}]},
     {t:"~11:30",n:"ð¡ Cable car",p:[1,1,1,1,1],d:"TelefÃ©rico over the Tagus. Thrilling for kids. Playgrounds + promenades nearby."},
     {t:"1:00 PM",n:"ð´ Lunch & nap",p:[1,1,1,0,0],par:true,d:"Back to hotel. Rose needs rest before Alfama. Critical recharge."},
@@ -245,7 +251,15 @@ function BarItem({item}){
       <div style={{width:54,flexShrink:0,fontSize:11,fontWeight:700,color:WG,paddingTop:2}}>{item.time}</div>
       <div style={{flex:1,minWidth:0}}>
         <div style={{display:"flex",alignItems:"center",flexWrap:"wrap",gap:4}}>
-          <span style={{fontWeight:600,fontSyle={{fontSize:13,color:"#555",lineHeight:1.6}}>{item.note}</div></div>}
+          <span style={{fontWeight:600,fontSize:14,color:DB}}>{item.name}</span>
+          <span style={{display:"inline-flex",gap:3,marginLeft:4}}>{item.ppl.map((on,i)=>on?<span key={i} style={{fontSize:10,fontWeight:700,color:"white",borderRadius:10,padding:"1px 6px",backgroundColor:PC[i]}}>{PEOPLE[i]}</span>:null)}</span>
+        </div>
+        <div style={{fontSize:12,color:"#888",marginTop:2}}>{item.price} Â· Cancel: {item.cancel}</div>
+        {item.flag&&<div style={{fontSize:11,color:AM,fontWeight:600,marginTop:4,background:AM_BG,borderRadius:5,padding:"3px 8px",display:"inline-block"}}>â ï¸ {item.flag}</div>}
+      </div>
+      <div style={{flexShrink:0,fontSize:12,color:"#ccc",paddingTop:2,transition:"transform 0.2s",transform:open?"rotate(180deg)":"rotate(0deg)"}}>â¼</div>
+    </div>
+    {open&&<div style={{padding:"0 14px 12px 68px"}}><div style={{fontSize:13,color:"#555",lineHeight:1.6}}>{item.note}</div></div>}
   </div>;
 }
 
@@ -306,7 +320,7 @@ export default function App(){
 
   const today=new Date().toISOString().slice(0,10);
   const todayIdx=CAL.findIndex(d=>d.iso===today);
-  const isTripTime=today<="2026-03-27"&&today<="2026-04-05";
+  const isTripTime=today>="2026-03-27"&&today<="2026-04-05";
   const wxLoc=today<="2026-04-01"?"Monsaraz, Alentejo":"Lisbon";
 
   useEffect(()=>{
