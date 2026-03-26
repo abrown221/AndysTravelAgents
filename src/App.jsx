@@ -26,46 +26,6 @@ const SOS=[
   {label:"Bairro Alto Hotel",phone:"+351213408288"},
 ];
 
-// ── BARROCAL TAB DATA ──
-// Updated Mar 24 from Carolina Calado's concierge reply (concierge@barrocal.pt)
-const BDAYS=[
-  {day:"Sat, Mar 28",label:"Day 1 — Arrival",items:[
-    {time:"9:30 AM",name:"🚐 Shuttle: LIS Airport → Barrocal",ppl:[1,1,1,1,1],cancel:"24h",note:"✅ CAROLINA CONFIRMED — Mercedes Class V. Car seat for Rose needed. UA 64 lands 8:10 AM, clear immigration ~9:00–9:30."},
-    {time:"4:30 PM",name:"💆 Spa — Massage + One-Hour Facial",ppl:[0,1,0,1,0],cancel:"same-day",note:"✅ CAROLINA CONFIRMED — Nicole + Christina. Carolina recommended Massage + One-Hour Facial instead of the Purifying Massage + Oil Bath we requested (those aren't on the menu). Spa menu PDF attached to her email."},
-  ]},
-  {day:"Sun, Mar 29",label:"Day 2 — Cookies, Wine & Évora",items:[
-    {time:"9:00 AM",name:"🍯 Honey Tasting (replaces Beekeeping)",ppl:[1,1,1,1,1],cancel:"TBD",note:"⚠️ OPTIONAL · NOT BOOKED — Decide on arrival. Beekeeping is 8+ only, so Rose can't participate. Honey Tasting instead: tour of pollinators on-site, observe bees safely, beeswax demo, taste two honeys. Optional 4×4 Jeep ride to hives. Carolina waiting for go-ahead."},
-    {time:"11:30 AM",name:"🍪 Cookie Workshop",ppl:[0,0,1,1,1],cancel:"12h",note:"✅ BOOKED — Rose, Christina, Jim. While Andy + Nicole are at wine tasting."},
-    {time:"12:00 PM",name:"🍷 Fita Preta Wines",ppl:[1,1,0,0,0],cancel:"24h",note:"✅ BOOKED — 12:00 PM Private Wine Tasting with food pairing (6 heroic wines). Andy + Nicole."},
-    {time:"~3:00 PM",name:"🏛️ Évora guided tour",ppl:[1,1,0,0,0],cancel:"—",note:"⏳ PENDING — Carolina checking guide availability. UNESCO World Heritage city: Roman Temple, bone chapel, cathedral. 1.5–2 hour guided walking tour. Could combine with Fita Preta visit."},
-  ]},
-  {day:"Mon, Mar 30",label:"Day 3 — Clay, Spa, Shelter & Farewell",sub:"🔔 Grandparents' last full day",items:[
-    {time:"11:30 AM",name:"🎨 Clay Modeling Workshop",ppl:[0,0,1,1,1],cancel:"12h",note:"✅ CAROLINA CONFIRMED — Rose, Christina, Jim. Pieces made today, painted on Mar 31 during wine blending. Grandparents' last craft activity."},
-    {time:"2:00 PM",name:"💆 Spa — Herbal Compress Treatment",ppl:[0,1,0,0,0],cancel:"same-day",note:"✅ CAROLINA CONFIRMED — Nicole solo session. Carolina suggests Herbal Compress. Full spa menu PDF attached."},
-    {time:"3:30 PM",name:"🐦 Animal Shelter Building",ppl:[1,1,1,0,0],cancel:"4h",note:"✅ CAROLINA CONFIRMED — ⚠️ MOVED FROM APR 1. The colleague running this experience is ONLY on property Mar 30. This is the only option. Andy, Nicole, Rose build birdhouses."},
-    {time:"7:30 PM",name:"🍽️ Cottage Dine-In Experience",ppl:[1,1,1,1,1],cancel:"TBD",note:"✅ CAROLINA CONFIRMED — Private farewell dinner in the cottage. Carolina says this is the best option and will meet expectations. Dine-in menu PDF attached for review. Grandparents' farewell night."},
-    {time:"~9:00 PM",name:"🌙 Nocturnal Walk",ppl:[1,1,1,1,1],cancel:"12h",note:"✅ CONFIRMED — All 4 adults (Rose sleeps after dinner). Estate biologist, flashlights, nocturnal fauna. Zero light pollution."},
-  ]},
-  {day:"Tue, Mar 31",label:"Day 4 — The Split",sub:"⚠️ Grandparents depart AM",items:[
-    {time:"8:30 AM",name:"🚐 Shuttle: Barrocal → Albatroz (Cascais)",ppl:[0,0,0,1,1],cancel:"24h",note:"✅ CAROLINA CONFIRMED — Mercedes Class Limo for 2 + luggage. ~2.5 hours to The Albatroz."},
-    {time:"11:00 AM",name:"🐴 Discovering Horses",ppl:[1,1,1,0,0],cancel:"4h",note:"✅ CAROLINA CONFIRMED — Andy, Nicole, Rose. Lusitano horses — grooming, feeding, bonding. Family of 3 version after grandparents leave."},
-    {time:"5:00 PM",name:"🍷 Wine Blending Workshop",ppl:[1,1,0,0,0],cancel:"12h",note:"✅ CAROLINA CONFIRMED — Andy + Nicole. Blend grapes, labeled bottle to take home."},
-    {time:"5:00 PM",name:"🎨 Clay Painting (Rose)",ppl:[0,0,1,0,0],cancel:"—",note:"✅ CAROLINA CONFIRMED — Instead of playroom, Rose paints her clay pieces from the Mar 30 workshop with a Guest Experience team member. Much better than playroom!"},
-  ]},
-  {day:"Wed, Apr 1",label:"Day 5 — Farewell Alentejo",items:[
-    {time:"1:00 PM",name:"🌸 Flower Arranging",ppl:[0,1,1,0,0],cancel:"24h",note:"✅ CONFIRMED — 1:00 PM. Nicole + Rose forage wildflowers with a florist on the estate. Late March = peak bloom."},
-    {time:"3:00 PM",name:"🕯️ Beeswax Candle Making",ppl:[1,1,1,0,0],cancel:"12h",note:"✅ CAROLINA CONFIRMED — Andy, Nicole, Rose. Beeswax + aromatic herbs from the estate."},
-  ]},
-  {day:"Thu, Apr 2",label:"Day 6 — Departure to Lisbon",items:[
-    {time:"8:00 AM",name:"🚐 Shuttle: Barrocal → Bairro Alto Hotel",ppl:[1,1,1,0,0],cancel:"24h",note:"✅ CAROLINA CONFIRMED — Mercedes E Class. Andy, Nicole, Rose + luggage + car seat."},
-  ]},
-  {day:"📋 Still Pending",label:"Open Items",items:[
-    {time:"1",name:"🎓 Évora guide",ppl:[0,0,0,0,0],cancel:"—",note:"Carolina checking availability for guided walking tour of Évora (Sun Mar 29, after Fita Preta)."},
-    {time:"2",name:"🍯 Honey tasting",ppl:[0,0,0,0,0],cancel:"—",note:"OPTIONAL — Confirm on arrival if we want to do this (Sun Mar 29 morning)."},
-    {time:"3",name:"🍽️ Wed dinner choice",ppl:[0,0,0,0,0],cancel:"—",note:"Monte Mar or Maré — both on road to Guincho, sea views, ~10 min from Albatroz. Tell José our pick."},
-  ]},
-];
-
 const TODOS=[
   {cat:"red",label:"🔴 ACTION NEEDED NOW",items:[
     {id:1,text:"Send Little Lisbon balance reply draft",detail:"Acknowledge balance, confirm we'll pay. ⚠️ Balance €280 due by Mon Mar 30 via PayPal.",link:"https://mail.google.com/mail/u/0/#drafts?compose=19d2072e61e27596",linkLabel:"Open draft",done:false},
@@ -244,25 +204,6 @@ function CalAct({a,dayHotel}){
   </div>;
 }
 
-function BarItem({item}){
-  const[open,setOpen]=useState(false);
-  return <div style={{borderBottom:"1px solid #f0f0f0"}}>
-    <div onClick={()=>setOpen(!open)} style={{padding:"10px 14px",cursor:"pointer",display:"flex",gap:8}}>
-      <div style={{width:54,flexShrink:0,fontSize:11,fontWeight:700,color:WG,paddingTop:2}}>{item.time}</div>
-      <div style={{flex:1,minWidth:0}}>
-        <div style={{display:"flex",alignItems:"center",flexWrap:"wrap",gap:4}}>
-          <span style={{fontWeight:600,fontSize:14,color:DB}}>{item.name}</span>
-          <span style={{display:"inline-flex",gap:3,marginLeft:4}}>{item.ppl.map((on,i)=>on?<span key={i} style={{fontSize:10,fontWeight:700,color:"white",borderRadius:10,padding:"1px 6px",backgroundColor:PC[i]}}>{PEOPLE[i]}</span>:null)}</span>
-        </div>
-        <div style={{fontSize:12,color:"#888",marginTop:2}}>{item.price} · Cancel: {item.cancel}</div>
-        {item.flag&&<div style={{fontSize:11,color:AM,fontWeight:600,marginTop:4,background:AM_BG,borderRadius:5,padding:"3px 8px",display:"inline-block"}}>⚠️ {item.flag}</div>}
-      </div>
-      <div style={{flexShrink:0,fontSize:12,color:"#ccc",paddingTop:2,transition:"transform 0.2s",transform:open?"rotate(180deg)":"rotate(0deg)"}}>▼</div>
-    </div>
-    {open&&<div style={{padding:"0 14px 12px 68px"}}><div style={{fontSize:13,color:"#555",lineHeight:1.6}}>{item.note}</div></div>}
-  </div>;
-}
-
 function LocBadge({loc,who}){const s=LS[loc];const l=LOC[loc];return <div style={{display:"inline-flex",alignItems:"center",gap:4,background:s.bg,border:`1px solid ${s.b}`,borderRadius:8,padding:"3px 8px",fontSize:11}}><span>{l.i}</span><span style={{fontWeight:600,color:s.c}}>{l.l}</span><span style={{display:"inline-flex",gap:2}}>{who.map((on,i)=>on?<span key={i} style={{width:14,height:14,borderRadius:7,backgroundColor:PC[i],display:"inline-flex",alignItems:"center",justifyContent:"center",fontSize:8,fontWeight:700,color:"white"}}>{INI[i]}</span>:null)}</span></div>}
 
 function SOSPanel({show,onClose}){
@@ -357,7 +298,7 @@ export default function App(){
       </div>
       <div style={{color:"rgba(255,255,255,0.4)",fontSize:10,marginTop:3}}>Mar 27 – Apr 5 · Tap any row for details</div>
       <div style={{display:"flex",marginTop:8,borderTop:"1px solid rgba(255,255,255,0.1)"}}>
-        {[{id:"calendar",l:"📅 Calendar"},{id:"barrocal",l:"🌿 Barrocal"},{id:"todo",l:"📋 To-Do"}].map(t=>
+        {[{id:"calendar",l:"📅 Calendar"},{id:"todo",l:"📋 To-Do"}].map(t=>
           <button key={t.id} onClick={()=>setTab(t.id)} style={{flex:1,padding:"8px 0",fontSize:12,fontWeight:tab===t.id?700:400,color:tab===t.id?WG:"rgba(255,255,255,0.45)",background:"none",border:"none",borderBottom:tab===t.id?`2px solid ${WG}`:"2px solid transparent",cursor:"pointer"}}>{t.l}</button>
         )}
       </div>
@@ -404,27 +345,6 @@ export default function App(){
         </div>
       </>}
 
-      {tab==="barrocal"&&<>
-        <div style={{background:"white",borderRadius:10,padding:"12px 14px",marginBottom:10,boxShadow:"0 1px 3px rgba(0,0,0,0.05)"}}>
-          <div style={{fontSize:13,fontWeight:700,color:DB}}>Barrocal on-estate activities</div>
-          <div style={{fontSize:12,color:"#888",marginTop:2}}>From their proposal to the Brown family.</div>
-          <div style={{display:"flex",gap:4,flexWrap:"wrap",marginTop:8}}>
-            {PEOPLE.map((p,i)=><span key={i} style={{fontSize:11,fontWeight:700,color:"white",borderRadius:10,padding:"2px 8px",backgroundColor:PC[i]}}>{p}</span>)}
-          </div>
-        </div>
-        {BDAYS.map((day,di)=><div key={di} style={{marginBottom:8,borderRadius:12,overflow:"hidden",boxShadow:"0 1px 4px rgba(0,0,0,0.06)",background:"white"}}>
-          <div style={{padding:"10px 14px",background:DB}}>
-            <div style={{fontSize:11,color:WG,fontWeight:600}}>{day.day}</div>
-            <div style={{color:"white",fontWeight:700,fontSize:14,marginTop:1}}>{day.label}</div>
-          </div>
-          {day.sub&&<div style={{padding:"4px 14px",fontSize:11,fontWeight:600,background:AM_BG,color:AM}}>{day.sub}</div>}
-          {day.items.map((item,i)=><BarItem key={i} item={item}/>)}
-        </div>)}
-        <div style={{background:GR_BG,borderRadius:14,padding:14,marginTop:8,borderLeft:`3px solid ${GR}`}}>
-          <div style={{fontSize:12,fontWeight:700,color:GR,marginBottom:4}}>Still pending</div>
-          <div style={{fontSize:12,color:"#666",lineHeight:1.7,whiteSpace:"pre-line"}}>{"1. Évora guide — Carolina checking availability\n2. Honey tasting — OPTIONAL, decide on arrival\n3. Wed dinner — choose Monte Mar or Maré (tell José)\n4. Portuguese For a Day — ask José (draft ready)"}</div>
-        </div>
-      </>}
 
       {tab==="todo"&&<>
         <div style={{background:"white",borderRadius:10,padding:"12px 14px",marginBottom:10,boxShadow:"0 1px 3px rgba(0,0,0,0.05)"}}>
