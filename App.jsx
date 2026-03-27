@@ -26,45 +26,6 @@ const SOS=[
   {label:"Bairro Alto Hotel",phone:"+351213408288"},
 ];
 
-// ── BARROCAL TAB DATA ──
-// Updated Mar 24 from Carolina Calado's concierge reply (concierge@barrocal.pt)
-const BDAYS=[
-  {day:"Sat, Mar 28",label:"Day 1 — Arrival",items:[
-    {time:"9:30 AM",name:"🚐 Shuttle: LIS Airport → Barrocal",ppl:[1,1,1,1,1],cancel:"24h",note:"✅ CAROLINA CONFIRMED — Mercedes Class V. Car seat for Rose needed. UA 64 lands 8:10 AM, clear immigration ~9:00–9:30."},
-    {time:"4:30 PM",name:"💆 Spa — Massage + One-Hour Facial",ppl:[0,1,0,1,0],cancel:"same-day",note:"✅ CAROLINA CONFIRMED — Nicole + Christina. Carolina recommended Massage + One-Hour Facial instead of the Purifying Massage + Oil Bath we requested (those aren't on the menu). Spa menu PDF attached to her email."},
-  ]},
-  {day:"Sun, Mar 29",label:"Day 2 — Cookies, Wine & Évora",items:[
-    {time:"9:00 AM",name:"🍯 Honey Tasting (replaces Beekeeping)",ppl:[1,1,1,1,1],cancel:"TBD",note:"⚠️ OPTIONAL · NOT BOOKED — Decide on arrival. Beekeeping is 8+ only, so Rose can't participate. Honey Tasting instead: tour of pollinators on-site, observe bees safely, beeswax demo, taste two honeys. Optional 4×4 Jeep ride to hives. Carolina waiting for go-ahead."},
-    {time:"11:30 AM",name:"🍪 Cookie Workshop",ppl:[0,0,1,1,1],cancel:"12h",note:"✅ BOOKED — Rose, Christina, Jim. While Andy + Nicole are at wine tasting."},
-    {time:"12:00 PM",name:"🍷 Fita Preta Wines",ppl:[1,1,0,0,0],cancel:"24h",note:"✅ BOOKED — 12:00 PM Private Wine Tasting with food pairing (6 heroic wines). Andy + Nicole."},
-    {time:"~3:00 PM",name:"🏛️ Évora guided tour",ppl:[1,1,0,0,0],cancel:"—",note:"⏳ PENDING — Carolina checking guide availability. UNESCO World Heritage city: Roman Temple, bone chapel, cathedral. 1.5–2 hour guided walking tour. Could combine with Fita Preta visit."},
-  ]},
-  {day:"Mon, Mar 30",label:"Day 3 — Clay, Spa, Shelter & Farewell",sub:"🔔 Grandparents' last full day",items:[
-    {time:"11:30 AM",name:"🎨 Clay Modeling Workshop",ppl:[0,0,1,1,1],cancel:"12h",note:"✅ CAROLINA CONFIRMED — Rose, Christina, Jim. Pieces made today, painted on Mar 31 during wine blending. Grandparents' last craft activity."},
-    {time:"2:00 PM",name:"💆 Spa — Herbal Compress Treatment",ppl:[0,1,0,0,0],cancel:"same-day",note:"✅ CAROLINA CONFIRMED — Nicole solo session. Carolina suggests Herbal Compress. Full spa menu PDF attached."},
-    {time:"3:30 PM",name:"🐦 Animal Shelter Building",ppl:[1,1,1,0,0],cancel:"4h",note:"✅ CAROLINA CONFIRMED — ⚠️ MOVED FROM APR 1. The colleague running this experience is ONLY on property Mar 30. This is the only option. Andy, Nicole, Rose build birdhouses."},
-    {time:"7:30 PM",name:"🍽️ Cottage Dine-In Experience",ppl:[1,1,1,1,1],cancel:"TBD",note:"✅ CAROLINA CONFIRMED — Private farewell dinner in the cottage. Carolina says this is the best option and will meet expectations. Dine-in menu PDF attached for review. Grandparents' farewell night."},
-    {time:"~9:00 PM",name:"🌙 Nocturnal Walk",ppl:[1,1,1,1,1],cancel:"12h",note:"✅ CONFIRMED — All 4 adults (Rose sleeps after dinner). Estate biologist, flashlights, nocturnal fauna. Zero light pollution."},
-  ]},
-  {day:"Tue, Mar 31",label:"Day 4 — The Split",sub:"⚠️ Grandparents depart AM",items:[
-    {time:"8:30 AM",name:"🚐 Shuttle: Barrocal → Albatroz (Cascais)",ppl:[0,0,0,1,1],cancel:"24h",note:"✅ CAROLINA CONFIRMED — Mercedes Class Limo for 2 + luggage. ~2.5 hours to The Albatroz."},
-    {time:"11:00 AM",name:"🐴 Discovering Horses",ppl:[1,1,1,0,0],cancel:"4h",note:"✅ CAROLINA CONFIRMED — Andy, Nicole, Rose. Lusitano horses — grooming, feeding, bonding. Family of 3 version after grandparents leave."},
-    {time:"5:00 PM",name:"🍷 Wine Blending Workshop",ppl:[1,1,0,0,0],cancel:"12h",note:"✅ CAROLINA CONFIRMED — Andy + Nicole. Blend grapes, labeled bottle to take home."},
-    {time:"5:00 PM",name:"🎨 Clay Painting (Rose)",ppl:[0,0,1,0,0],cancel:"—",note:"✅ CAROLINA CONFIRMED — Instead of playroom, Rose paints her clay pieces from the Mar 30 workshop with a Guest Experience team member. Much better than playroom!"},
-  ]},
-  {day:"Wed, Apr 1",label:"Day 5 — Farewell Alentejo",items:[
-    {time:"1:00 PM",name:"🌸 Flower Arranging",ppl:[0,1,1,0,0],cancel:"24h",note:"✅ CONFIRMED — 1:00 PM. Nicole + Rose forage wildflowers with a florist on the estate. Late March = peak bloom."},
-    {time:"3:00 PM",name:"🕯️ Beeswax Candle Making",ppl:[1,1,1,0,0],cancel:"12h",note:"✅ CAROLINA CONFIRMED — Andy, Nicole, Rose. Beeswax + aromatic herbs from the estate."},
-  ]},
-  {day:"Thu, Apr 2",label:"Day 6 — Departure to Lisbon",items:[
-    {time:"8:00 AM",name:"🚐 Shuttle: Barrocal → Bairro Alto Hotel",ppl:[1,1,1,0,0],cancel:"24h",note:"✅ CAROLINA CONFIRMED — Mercedes E Class. Andy, Nicole, Rose + luggage + car seat."},
-  ]},
-  {day:"📋 Still Pending",label:"Open Items",items:[
-    {time:"1",name:"🎓 Évora guide",ppl:[0,0,0,0,0],cancel:"—",note:"Carolina checking availability for guided walking tour of Évora (Sun Mar 29, after Fita Preta)."},
-    {time:"2",name:"🍯 Honey tasting",ppl:[0,0,0,0,0],cancel:"—",note:"OPTIONAL — Confirm on arrival if we want to do this (Sun Mar 29 morning)."},
-    {time:"3",name:"🍽️ Wed dinner choice",ppl:[0,0,0,0,0],cancel:"—",note:"Monte Mar or Maré — both on road to Guincho, sea views, ~10 min from Albatroz. Tell José our pick."},
-  ]},
-];
 
 const TODOS=[
   {cat:"red",label:"🔴 ACTION NEEDED NOW",items:[
@@ -149,25 +110,24 @@ const CAL=[
     {t:"~5:00",n:"☕ Pool & pack",p:[1,1,1,0,0],loc:"bar",d:"Last swim. Start packing for Lisbon transfer tomorrow.\n\n💡 OPTIONAL: Horseback riding trail on the estate — ask Carolina for availability."},
     {t:"7:00 PM",n:"Farewell dinner",p:[1,1,1,0,0],loc:"bar",d:"Last Alentejo evening. Final estate wine. View of Monsaraz lit by last light."},
   ]},
-  {date:"Thu, Apr 2",n:6,title:"Reunite in Lisbon!",iso:"2026-04-02",hotel:"lis",free:7.5,prep:"Download Google Maps offline: Lisbon + Cascais regions before leaving Barrocal Wi-Fi.",locs:[{w:[1,1,1,1,1],l:"lis"}],acts:[
+  {date:"Thu, Apr 2",n:6,title:"Reunite in Lisbon!",iso:"2026-04-02",hotel:"lis",free:5,prep:"Slow Barrocal morning — 10 AM departure. Download Google Maps offline: Lisbon + Cascais regions before leaving Barrocal Wi-Fi.",locs:[{w:[1,1,1,1,1],l:"lis"}],acts:[
     {t:"8:30 AM",n:"⛵ Yacht cruise — Katerina Cranch",p:[0,0,0,1,1],from:"A",src:1,booked:true,d:"✅ CONFIRMED — Katerina Cranch, 12m yacht. 2-hour coastal cruise from Cascais Marina. Captain, fuel, paddle boards, welcome drinks included. 8:30 AM departure.\n\nLogistics: Check out of Albatroz. Leave luggage with concierge. Walk to marina (~10 min). After cruise: private car transfer to Bairro Alto Hotel (luggage pre-loaded from hotel — no backtracking needed).",cancel:"24h",mapQ:"Cascais+Marina+Portugal",links:[{t:"Cascais sailing",u:"https://www.viator.com/Cascais/d28587-ttd"}]},
     {t:"~10:30 AM",n:"🚗 Private car → Lisbon",p:[0,0,0,1,1],from:"A",src:1,booked:true,d:"✅ CONFIRMED — Private car from Cascais Marina to Bairro Alto Hotel. Luggage pre-loaded from hotel — no backtracking needed. After 2-hour yacht cruise.",mapQ:"Bairro+Alto+Hotel+Lisbon"},
-    {t:"8:00 AM",n:"🚗 Barrocal → Lisbon",p:[1,1,1,0,0],from:"A",src:1,booked:true,d:"✅ CAROLINA CONFIRMED — Mercedes E Class. Car seat for Rose. Barrocal shuttle, ~2 hours. Rose naps.",cancel:"24h",links:[{t:"Barrocal",u:"https://barrocal.pt"}]},
-    {t:"1:00 PM",n:"🍴 Lunch & nap",p:[1,1,1,0,0],par:true,d:"Back to hotel. Rose needs rest before Alfama. Critical recharge."},
-    {t:"1:00 PM",n:"🏛️ Chiado free time",p:[0,0,0,1,1],par:true,d:"Christina + Jim explore: Bertrand (world's oldest bookshop, 1732), Carmo Convent (roofless 1755 church — architecturally haunting), Manteigaria pastéis de nata. All 5-min walk from hotel.",mapQ:"Carmo+Convent+Lisbon",links:[{t:"Carmo Convent",u:"https://maps.google.com/?q=Carmo+Convent+Lisbon"}]},
-    {t:"3:00 PM",n:"🚶 Little Lisbon — Express Lisbon Tour",p:[1,1,1,1,1],from:"A",src:1,booked:true,d:"✅ FULLY CONFIRMED by Mariana — Thu Apr 2, 3:00 PM.\n'Express Lisbon' private family tour: 2-hour tuk-tuk ride + 1-hour walking tour with scavenger hunt.\nGuide + driver meet at Bairro Alto Hotel.\n\nRoute: Baixa → Chiado → Bairro Alto → Príncipe Real → Mouraria → Alfama. Viewpoints: Senhora do Monte, Portas do Sol/Santa Luzia, São Pedro de Alcântara. Kids' games + pastry included.\n\nScavenger hunt options (choose at start): Alfama (ends Campo das Cebolas) OR Bairro Alto (ends Praça D. Luís I).\n\nBalance payment due by Mon Mar 30 via PayPal.\n\n📞 +351 912 800 647 · info@lisbonforkids.com (Mariana)",phone:"+351912800647",cancel:"24h",mapQ:"Alfama+Lisbon",links:[{t:"Little Lisbon",u:"https://www.lisbonforkids.com/tuk-tuk-tours"}]},
-    {t:"~4:30",n:"🏰 Alfama + Castle",p:[1,1,1,1,1],d:"Tile streets, peacocks, ramparts, Children's Centre. Ginjinha for adults.",mapQ:"Castelo+São+Jorge+Lisbon",links:[{t:"Castelo",u:"https://maps.google.com/?q=Castelo+São+Jorge+Lisbon"}]},
-    {t:"7:00 PM",n:"🍽️ Early dinner",p:[1,1,1,0,0],par:true,d:"Family eats early. Rose to bed. Quiet evening."},
-    {t:"8:30 PM",n:"🎵 Fado — Mesa de Frades",p:[0,0,0,1,1],from:"A",src:1,par:true,d:"Tiny former chapel. Good Friday fado = once-in-a-lifetime. Book via concierge. Very small — book early.",mapQ:"Mesa+de+Frades+Alfama+Lisbon",links:[{t:"Mesa de Frades",u:"https://maps.google.com/?q=Mesa+de+Frades+Alfama+Lisbon"}]},
+    {t:"10:00 AM",n:"🚗 Barrocal → Lisbon",p:[1,1,1,0,0],from:"A",src:1,booked:true,d:"✅ CAROLINA CONFIRMED — Mercedes E Class. Car seat for Rose. Barrocal shuttle, ~2 hours. Arrive Bairro Alto Hotel ~12 PM.\n\n⚠️ CHANGED FROM 8:00 AM → 10:00 AM. Must notify Carolina (concierge@barrocal.pt) of new departure time. No early Lisbon bookings — enjoy a slow last Barrocal morning, breakfast with the donkeys.",cancel:"24h",links:[{t:"Barrocal",u:"https://barrocal.pt"}]},
+    {t:"~12:00 PM",n:"🍴 Check in, lunch & nap",p:[1,1,1,0,0],par:true,d:"Arrive Bairro Alto Hotel ~12 PM. Check in, quick lunch nearby, Rose naps. Critical recharge before the Little Lisbon tour at 3 PM."},
+    {t:"~12:00 PM",n:"🏛️ Chiado free time",p:[0,0,0,1,1],par:true,d:"Christina + Jim arrived ~11 AM from Cascais. Explore: Bertrand (world's oldest bookshop, 1732), Carmo Convent (roofless 1755 church — architecturally haunting), Manteigaria pastéis de nata. All 5-min walk from hotel.",mapQ:"Carmo+Convent+Lisbon",links:[{t:"Carmo Convent",u:"https://maps.google.com/?q=Carmo+Convent+Lisbon"}]},
+    {t:"3:00 PM",n:"🚶 Little Lisbon — Express Lisbon Tour",p:[1,1,1,1,1],from:"A",src:1,booked:true,d:"✅ FULLY CONFIRMED by Mariana — Thu Apr 2, 3:00 PM.\n'Express Lisbon' private family tour: 2-hour tuk-tuk ride + 1-hour walking tour with scavenger hunt.\nGuide + driver meet at Bairro Alto Hotel.\n\nRoute: Baixa → Chiado → Bairro Alto → Príncipe Real → Mouraria → Alfama. Viewpoints: Senhora do Monte, Portas do Sol/Santa Luzia, São Pedro de Alcântara. Kids' games + pastry included.\n\nScavenger hunt options (choose at start): Alfama (ends Campo das Cebolas) OR Bairro Alto (ends Praça D. Luís I).\n\nTour covers Alfama at a fun pace — dedicated Alfama + Castle visit saved for tomorrow (Apr 3).\n\nBalance payment due by Mon Mar 30 via PayPal.\n\n📞 +351 912 800 647 · info@lisbonforkids.com (Mariana)",phone:"+351912800647",cancel:"24h",mapQ:"Alfama+Lisbon",links:[{t:"Little Lisbon",u:"https://www.lisbonforkids.com/tuk-tuk-tours"}]},
+    {t:"~6:00 PM",n:"🍽️ Early dinner",p:[1,1,1,0,0],par:true,d:"Tour ends ~6 PM. Family eats early near the hotel. Rose to bed after a big day."},
+    {t:"8:30 PM",n:"🎵 Fado — Mesa de Frades",p:[0,0,0,1,1],from:"A",src:1,par:true,d:"Tiny former chapel in Alfama. Book via Bairro Alto Hotel concierge. Very small venue — book early.",mapQ:"Mesa+de+Frades+Alfama+Lisbon",links:[{t:"Mesa de Frades",u:"https://maps.google.com/?q=Mesa+de+Frades+Alfama+Lisbon"}]},
   ]},
-  {date:"Fri, Apr 3",n:7,title:"Oceanarium, Alfama & Fado",iso:"2026-04-03",hotel:"lis",free:6,note:"⚠️ Good Friday — national holiday",prep:"Charge phone fully — heavy photo day. Metro passes for all. Comfortable shoes for Alfama cobblestones.",locs:[{w:[1,1,1,1,1],l:"lis"}],acts:[
+  {date:"Fri, Apr 3",n:7,title:"Oceanarium & Alfama",iso:"2026-04-03",hotel:"lis",free:6,note:"⚠️ Good Friday — national holiday",prep:"Charge phone fully — heavy photo day. Metro passes for all. Comfortable shoes for Alfama cobblestones.",locs:[{w:[1,1,1,1,1],l:"lis"}],acts:[
     {t:"10:00 AM",n:"🐙 Oceanarium",p:[1,1,1,1,1],from:"A",src:1,booked:true,d:"✅ BOOKED — Ref #96455533. 10:00 AM entry, Fri Apr 3.\n\nTHE must-do for Rose. 15,000+ marine animals. Metro to Oriente (Calatrava station). Allow 2+ hours.\n\n📞 +351 218 917 000 · info@oceanario.pt",phone:"+351218917000",cancel:"24h",mapQ:"Oceanário+de+Lisboa",links:[{t:"Oceanarium",u:"https://www.oceanario.pt"}]},
     {t:"~11:30",n:"🚡 Cable car",p:[1,1,1,1,1],d:"Teleférico over the Tagus. Thrilling for kids. Playgrounds + promenades nearby."},
-    {t:"1:00 PM",n:"🍴 Lunch & nap",p:[1,1,1,0,0],par:true,d:"Back to hotel. Rose needs rest before Alfama. Critical recharge."},
-    {t:"1:00 PM",n:"🏛️ Chiado free time",p:[0,0,0,1,1],par:true,d:"Christina + Jim explore: Bertrand (world's oldest bookshop, 1732), Carmo Convent (roofless 1755 church — architecturally haunting), Manteigaria pastéis de nata. All 5-min walk from hotel.",mapQ:"Carmo+Convent+Lisbon",links:[{t:"Carmo Convent",u:"https://maps.google.com/?q=Carmo+Convent+Lisbon"}]},
-    {t:"~4:30",n:"🏰 Alfama + Castle",p:[1,1,1,1,1],d:"Tile streets, peacocks, ramparts, Children's Centre. Ginjinha for adults.",mapQ:"Castelo+São+Jorge+Lisbon",links:[{t:"Castelo",u:"https://maps.google.com/?q=Castelo+São+Jorge+Lisbon"}]},
-    {t:"7:00 PM",n:"🍽️ Early dinner",p:[1,1,1,0,0],par:true,d:"Family eats early. Rose to bed. Quiet evening."},
-    {t:"8:30 PM",n:"🎵 Fado — Mesa de Frades",p:[0,0,0,1,1],from:"A",src:1,par:true,d:"Tiny former chapel. Good Friday fado = once-in-a-lifetime. Book via concierge. Very small — book early.",mapQ:"Mesa+de+Frades+Alfama+Lisbon",links:[{t:"Mesa de Frades",u:"https://maps.google.com/?q=Mesa+de+Frades+Alfama+Lisbon"}]},
+    {t:"1:00 PM",n:"🍴 Lunch & nap",p:[1,1,1,0,0],par:true,d:"Back to hotel. Rose needs rest before Alfama. Critical recharge — big afternoon ahead."},
+    {t:"1:00 PM",n:"☕ Free time",p:[0,0,0,1,1],par:true,d:"Christina + Jim free afternoon. Options: revisit Chiado spots you missed yesterday, Príncipe Real garden + boutiques, or LX Factory (creative hub in converted industrial space, ~10 min taxi). Regroup at hotel by 3:30 for Alfama.",mapQ:"Príncipe+Real+Lisbon",links:[{t:"LX Factory",u:"https://maps.google.com/?q=LX+Factory+Lisbon"},{t:"Príncipe Real",u:"https://maps.google.com/?q=Príncipe+Real+Lisbon"}]},
+    {t:"~3:30 PM",n:"🏰 Alfama + Castle São Jorge",p:[1,1,1,1,1],d:"The dedicated Alfama afternoon. Yesterday's Little Lisbon tour gave you the overview — today go deeper at your own pace.\n\nCastelo de São Jorge: ramparts, peacocks, Children's Centre (Rose will love it). Then wind down through Alfama's tile streets, laundry lines, fado echoing from doorways.\n\nGinjinha for adults at a tiny counter bar. End at Portas do Sol viewpoint for golden hour.\n\n⚠️ Good Friday — some shops/restaurants may be closed. Castle should be open (confirm hours).",mapQ:"Castelo+São+Jorge+Lisbon",links:[{t:"Castelo",u:"https://maps.google.com/?q=Castelo+São+Jorge+Lisbon"},{t:"Alfama",u:"https://maps.google.com/?q=Alfama+Lisbon"}]},
+    {t:"~6:30 PM",n:"🍽️ Dinner in Alfama",p:[1,1,1,1,1],d:"Eat together in Alfama while you're there. Good Friday seafood tradition — bacalhau (salt cod) is the classic. Try a local tasca. Early enough for Rose."},
+    {t:"~8:00 PM",n:"🚶 Walk back to hotel",p:[1,1,1,1,1],d:"Downhill stroll from Alfama through Baixa to Bairro Alto Hotel. Lisbon lit up at night. Rose in the stroller, gelato stop on the way. Easy last evening before tomorrow's farewell day."},
   ]},
   {date:"Sat, Apr 4",n:8,title:"Slow Lisbon farewell",iso:"2026-04-04",hotel:"lis",free:5,prep:"Last full day. No tickets needed — just walk and eat.",locs:[{w:[1,1,1,1,1],l:"lis"}],acts:[
     {t:"~9:30",n:"🌳 Jardim da Estrela",p:[1,1,1,1,1],d:"Playground, duck ponds, bandstand, peacocks. Café under jacaranda trees.",mapQ:"Jardim+da+Estrela+Lisbon",links:[{t:"Visit Lisboa",u:"http://www.visitlisboa.com/en/places/jardim-da-estrela"}]},
@@ -185,6 +145,114 @@ const CAL=[
     {t:"~5:33 PM",n:"🏠 Home",p:[1,1,1,0,0],d:"Arrive Union Station ~5:33 PM (or ~6:28 PM if on backup 3:26 train). Uber home. Rose to bed. Pour a glass of Alentejo wine from the Barrocal boutique.\n\nBoa viagem! 🇵🇹"},
   ]},
 ];
+
+// ── GOOGLE CALENDAR HELPER ──
+function parseTime(tStr){
+  // Handles: "3:30 PM", "~3:30 PM", "9:40 AM–5:00 PM", "~11:00", "8:10 AM"
+  const clean=tStr.replace(/^~\s*/,"").split(/[–—-]/)[0].trim();
+  const m=clean.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);
+  if(!m)return null;
+  let h=parseInt(m[1]),min=parseInt(m[2]);
+  const ampm=m[3]?.toUpperCase();
+  if(ampm==="PM"&&h<12)h+=12;
+  if(ampm==="AM"&&h===12)h=0;
+  // If no AM/PM and hour <= 7, assume PM (contextual: trip activities)
+  if(!ampm&&h>=1&&h<=7)h+=12;
+  return {h,min};
+}
+
+function parseEndTime(tStr){
+  const parts=tStr.replace(/^~\s*/,"").split(/[–—-]/);
+  if(parts.length<2)return null;
+  const end=parts[1].trim();
+  const m=end.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);
+  if(!m)return null;
+  let h=parseInt(m[1]),min=parseInt(m[2]);
+  const ampm=m[3]?.toUpperCase();
+  if(ampm==="PM"&&h<12)h+=12;
+  if(ampm==="AM"&&h===12)h=0;
+  if(!ampm&&h>=1&&h<=7)h+=12;
+  return {h,min};
+}
+
+function pad2(n){return n.toString().padStart(2,"0");}
+
+function gcalUrl(a, day){
+  const start=parseTime(a.t);
+  if(!start)return null;
+  const end=parseEndTime(a.t)||{h:Math.min(start.h+1,23),min:start.min};
+
+  const iso=day.iso; // "2026-03-27"
+  const ds=iso.replace(/-/g,"");
+  const startStr=`${ds}T${pad2(start.h)}${pad2(start.min)}00`;
+  const endStr=`${ds}T${pad2(end.h)}${pad2(end.min)}00`;
+
+  // Time zone: US for transit days, Portugal for everything else
+  const isUS=day.hotel==="fly";
+  const tz=isUS?"America/New_York":"Europe/Lisbon";
+
+  // Build title
+  const titleClean=a.n.replace(/[^\w\s&·—–\-→:,.'()]/g,"").trim();
+  const title=`${titleClean} — Portugal 2026`;
+
+  // Build rich description
+  const lines=[];
+
+  // Who
+  const who=PEOPLE.filter((_,i)=>a.p[i]).join(", ");
+  if(who)lines.push(`👥 ${who}`);
+
+  // Booking status
+  if(a.booked)lines.push("✅ BOOKED / CONFIRMED");
+  else if(a.src&&!a.booked)lines.push("⚠️ NOT YET BOOKED");
+
+  // Confirmation number
+  if(a.conf)lines.push(`📋 Confirmation: #${a.conf}`);
+
+  // Source
+  if(a.from==="B")lines.push("📌 Arranged by: Barrocal (Carolina)");
+  if(a.from==="A")lines.push("📌 Arranged by: Andy");
+
+  // Cancellation policy
+  if(a.cancel){
+    if(a.cancel==="same-day")lines.push("⚠️ Cancel: same-day = 100% charge");
+    else lines.push(`⏰ Cancel: ${a.cancel} before`);
+  }
+
+  // Phone
+  if(a.phone)lines.push(`📞 ${a.phone}`);
+
+  // Full description
+  if(a.d)lines.push("","--- Details ---","",a.d);
+
+  // Hotel for the night
+  const htl=HOTELS[day.hotel];
+  if(htl?.name)lines.push("",`🏨 Hotel: ${htl.name}`,htl.res?`Res: ${htl.res}`:"",htl.room?`Room: ${htl.room}`:"",htl.phone?`📞 ${htl.phone}`:"");
+
+  // Links
+  if(a.links?.length)lines.push("",...a.links.map(lk=>`🔗 ${lk.t}: ${lk.u}`));
+
+  // Map link
+  if(a.mapQ)lines.push("",`📍 https://www.google.com/maps/search/${a.mapQ}`);
+
+  const details=lines.filter(l=>l!==undefined&&l!=="").join("\n");
+
+  // Location string
+  let location="";
+  if(a.mapQ)location=decodeURIComponent(a.mapQ.replace(/\+/g," "));
+  else if(a.loc&&LOC[a.loc])location=LOC[a.loc].l+", Portugal";
+  else if(day.hotel&&HOTELS[day.hotel]?.name)location=HOTELS[day.hotel].name+", Portugal";
+
+  const params=new URLSearchParams({
+    action:"TEMPLATE",
+    text:title,
+    dates:`${startStr}/${endStr}`,
+    ctz:tz,
+    details:details,
+    location:location,
+  });
+  return `https://calendar.google.com/calendar/render?${params.toString()}`;
+}
 
 // ── COMPONENTS ──
 function Dots({p}){return <span style={{display:"inline-flex",gap:2}}>{p.map((on,i)=>on?<span key={i} style={{width:16,height:16,borderRadius:8,backgroundColor:PC[i],display:"inline-flex",alignItems:"center",justifyContent:"center",fontSize:9,fontWeight:700,color:"white"}}>{INI[i]}</span>:null)}</span>}
@@ -210,7 +278,13 @@ function MapBtn({dayHotel,mapQ}){
   return <a href={url} target="_blank" rel="noopener noreferrer" onClick={e=>e.stopPropagation()} style={{flexShrink:0,width:28,height:28,borderRadius:14,background:"#E6F3F0",display:"inline-flex",alignItems:"center",justifyContent:"center",textDecoration:"none",fontSize:14,border:`1px solid ${GR}44`}} title="Directions">📍</a>;
 }
 
-function CalAct({a,dayHotel}){
+function GCalBtn({a,day}){
+  const url=gcalUrl(a,day);
+  if(!url)return null;
+  return <a href={url} target="_blank" rel="noopener noreferrer" onClick={e=>e.stopPropagation()} style={{flexShrink:0,width:28,height:28,borderRadius:14,background:"#E8F0FE",display:"inline-flex",alignItems:"center",justifyContent:"center",textDecoration:"none",fontSize:14,border:"1px solid #4285F444"}} title="Add to Google Calendar">📅</a>;
+}
+
+function CalAct({a,dayHotel,day}){
   const[open,setOpen]=useState(false);const s=a.loc?LS[a.loc]:null;
   return <div style={{borderBottom:"1px solid #f5f5f5",background:s?s.bg+"44":"white"}}>
     <div onClick={()=>a.d&&setOpen(!open)} style={{padding:"8px 14px",cursor:a.d?"pointer":"default",display:"flex",gap:6,alignItems:"flex-start"}}>
@@ -230,6 +304,7 @@ function CalAct({a,dayHotel}){
         </div>
       </div>
       <div style={{display:"flex",alignItems:"center",gap:4,flexShrink:0,paddingTop:2}}>
+        <GCalBtn a={a} day={day}/>
         <MapBtn dayHotel={dayHotel} mapQ={a.mapQ}/>
         {a.d&&<div style={{fontSize:12,color:"#ccc",transition:"transform 0.2s",transform:open?"rotate(180deg)":"rotate(0deg)"}}>▼</div>}
       </div>
@@ -244,24 +319,6 @@ function CalAct({a,dayHotel}){
   </div>;
 }
 
-function BarItem({item}){
-  const[open,setOpen]=useState(false);
-  return <div style={{borderBottom:"1px solid #f0f0f0"}}>
-    <div onClick={()=>setOpen(!open)} style={{padding:"10px 14px",cursor:"pointer",display:"flex",gap:8}}>
-      <div style={{width:54,flexShrink:0,fontSize:11,fontWeight:700,color:WG,paddingTop:2}}>{item.time}</div>
-      <div style={{flex:1,minWidth:0}}>
-        <div style={{display:"flex",alignItems:"center",flexWrap:"wrap",gap:4}}>
-          <span style={{fontWeight:600,fontSize:14,color:DB}}>{item.name}</span>
-          <span style={{display:"inline-flex",gap:3,marginLeft:4}}>{item.ppl.map((on,i)=>on?<span key={i} style={{fontSize:10,fontWeight:700,color:"white",borderRadius:10,padding:"1px 6px",backgroundColor:PC[i]}}>{PEOPLE[i]}</span>:null)}</span>
-        </div>
-        <div style={{fontSize:12,color:"#888",marginTop:2}}>{item.price} · Cancel: {item.cancel}</div>
-        {item.flag&&<div style={{fontSize:11,color:AM,fontWeight:600,marginTop:4,background:AM_BG,borderRadius:5,padding:"3px 8px",display:"inline-block"}}>⚠️ {item.flag}</div>}
-      </div>
-      <div style={{flexShrink:0,fontSize:12,color:"#ccc",paddingTop:2,transition:"transform 0.2s",transform:open?"rotate(180deg)":"rotate(0deg)"}}>▼</div>
-    </div>
-    {open&&<div style={{padding:"0 14px 12px 68px"}}><div style={{fontSize:13,color:"#555",lineHeight:1.6}}>{item.note}</div></div>}
-  </div>;
-}
 
 function LocBadge({loc,who}){const s=LS[loc];const l=LOC[loc];return <div style={{display:"inline-flex",alignItems:"center",gap:4,background:s.bg,border:`1px solid ${s.b}`,borderRadius:8,padding:"3px 8px",fontSize:11}}><span>{l.i}</span><span style={{fontWeight:600,color:s.c}}>{l.l}</span><span style={{display:"inline-flex",gap:2}}>{who.map((on,i)=>on?<span key={i} style={{width:14,height:14,borderRadius:7,backgroundColor:PC[i],display:"inline-flex",alignItems:"center",justifyContent:"center",fontSize:8,fontWeight:700,color:"white"}}>{INI[i]}</span>:null)}</span></div>}
 
@@ -357,7 +414,7 @@ export default function App(){
       </div>
       <div style={{color:"rgba(255,255,255,0.4)",fontSize:10,marginTop:3}}>Mar 27 – Apr 5 · Tap any row for details</div>
       <div style={{display:"flex",marginTop:8,borderTop:"1px solid rgba(255,255,255,0.1)"}}>
-        {[{id:"calendar",l:"📅 Calendar"},{id:"barrocal",l:"🌿 Barrocal"},{id:"todo",l:"📋 To-Do"}].map(t=>
+        {[{id:"calendar",l:"📅 Calendar"},{id:"todo",l:"📋 To-Do"}].map(t=>
           <button key={t.id} onClick={()=>setTab(t.id)} style={{flex:1,padding:"8px 0",fontSize:12,fontWeight:tab===t.id?700:400,color:tab===t.id?WG:"rgba(255,255,255,0.45)",background:"none",border:"none",borderBottom:tab===t.id?`2px solid ${WG}`:"2px solid transparent",cursor:"pointer"}}>{t.l}</button>
         )}
       </div>
@@ -391,7 +448,7 @@ export default function App(){
             <div style={{padding:"6px 12px",display:"flex",flexWrap:"wrap",gap:4,borderBottom:"1px solid #f0f0f0"}}>
               {day.locs.map((lb,li)=><LocBadge key={li} loc={lb.l} who={lb.w}/>)}
             </div>
-            {day.acts.map((a,ai)=><CalAct key={ai} a={a} dayHotel={day.hotel}/>)}
+            {day.acts.map((a,ai)=><CalAct key={ai} a={a} dayHotel={day.hotel} day={day}/>)}
           </div>;
         })}
         {/* Daily average */}
@@ -401,28 +458,6 @@ export default function App(){
             <div style={{fontSize:10,color:"#999",marginTop:2}}>Parks, meals, wandering, pool, naps — anything unbooked</div>
           </div>
           <div style={{fontSize:20,fontWeight:700,color:WG}}>{(CAL.reduce((a,d)=>a+d.free,0)/CAL.length).toFixed(1)}h</div>
-        </div>
-      </>}
-
-      {tab==="barrocal"&&<>
-        <div style={{background:"white",borderRadius:10,padding:"12px 14px",marginBottom:10,boxShadow:"0 1px 3px rgba(0,0,0,0.05)"}}>
-          <div style={{fontSize:13,fontWeight:700,color:DB}}>Barrocal on-estate activities</div>
-          <div style={{fontSize:12,color:"#888",marginTop:2}}>From their proposal to the Brown family.</div>
-          <div style={{display:"flex",gap:4,flexWrap:"wrap",marginTop:8}}>
-            {PEOPLE.map((p,i)=><span key={i} style={{fontSize:11,fontWeight:700,color:"white",borderRadius:10,padding:"2px 8px",backgroundColor:PC[i]}}>{p}</span>)}
-          </div>
-        </div>
-        {BDAYS.map((day,di)=><div key={di} style={{marginBottom:8,borderRadius:12,overflow:"hidden",boxShadow:"0 1px 4px rgba(0,0,0,0.06)",background:"white"}}>
-          <div style={{padding:"10px 14px",background:DB}}>
-            <div style={{fontSize:11,color:WG,fontWeight:600}}>{day.day}</div>
-            <div style={{color:"white",fontWeight:700,fontSize:14,marginTop:1}}>{day.label}</div>
-          </div>
-          {day.sub&&<div style={{padding:"4px 14px",fontSize:11,fontWeight:600,background:AM_BG,color:AM}}>{day.sub}</div>}
-          {day.items.map((item,i)=><BarItem key={i} item={item}/>)}
-        </div>)}
-        <div style={{background:GR_BG,borderRadius:14,padding:14,marginTop:8,borderLeft:`3px solid ${GR}`}}>
-          <div style={{fontSize:12,fontWeight:700,color:GR,marginBottom:4}}>Still pending</div>
-          <div style={{fontSize:12,color:"#666",lineHeight:1.7,whiteSpace:"pre-line"}}>{"1. Évora guide — Carolina checking availability\n2. Honey tasting — OPTIONAL, decide on arrival\n3. Wed dinner — choose Monte Mar or Maré (tell José)\n4. Portuguese For a Day — ask José (draft ready)"}</div>
         </div>
       </>}
 
